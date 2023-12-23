@@ -6,7 +6,8 @@ module.exports = {
   entry: path.resolve(__dirname, "./src/index.tsx"), // 入口文件
   output: {
     path: path.join(__dirname, "./dist"), // 打包后生成的文件夹
-    filename: "[name].[contenthash:8].js", // js文件名称
+    // filename: "[name].[contenthash:8].js", // js文件名称
+    filename: "[name].js", // js文件名称
     clean: true // 每次构建都清除dist包
   },
   module: {
